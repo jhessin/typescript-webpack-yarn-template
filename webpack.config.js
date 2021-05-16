@@ -1,3 +1,5 @@
+/** @format */
+
 const path = require('path');
 
 const config = {
@@ -17,20 +19,16 @@ const config = {
         test: /\.tsx?$/,
         use: 'ts-loader',
         exclude: /node_modules/,
-      }
-    ]
+      },
+    ],
   },
   resolve: {
-    extensions: [
-      '.tsx',
-      '.ts',
-      '.js',
-    ],
+    extensions: ['.tsx', '.ts', '.js'],
   },
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
-  }
-}
+  },
+};
 
 module.exports = config;

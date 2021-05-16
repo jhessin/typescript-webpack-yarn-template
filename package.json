@@ -13,8 +13,10 @@
   "devDependencies": {
     "@types/lodash": "^4",
     "@types/node": "^14.0.13",
+    "@types/prettier": "^2",
     "@types/webpack-dev-server": "^3",
     "@yarnpkg/pnpify": "^2.0.0-rc.25",
+    "prettier": "^2.3.0",
     "ts-loader": "^9.1.2",
     "tslib": "^2.0.0",
     "typescript": "^3.9.5",
