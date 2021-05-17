@@ -5,12 +5,17 @@ const path = require('path');
 const config = {
   entry: './src/index.ts',
   mode: 'development',
+  target: 'web',
   devtool: 'inline-source-map',
   devServer: {
     contentBase: path.join(__dirname, 'public'),
     compress: true,
     host: '0.0.0.0',
     watchContentBase: true,
+    hot: true,
+    injectHot: true,
+    inline: true,
+    port: 8080,
     overlay: true,
   },
   module: {
